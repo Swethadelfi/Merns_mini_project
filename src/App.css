@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe0f0, #c8d6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+  border: 3px solid #f5b5d6;
+}
+
+h1 {
+  color: #8a3ab9;
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  font-size: 18px;
+  color: #4b0082;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.choice-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px 15px;
+  background: #f5b5d6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.choice-btn:hover {
+  background: #e48eb8;
+  transform: scale(1.05);
+}
+
+.results-box {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 2px dashed #ccc;
+}
+
+.result-msg {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #6a1b9a;
+}
+
+.history-box {
+  text-align: left;
+  background: #fff5fa;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #f5b5d6;
+}
+
+.history-box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.reset-btn {
+  background: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #4a126a;
+}
+
+.animate {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
